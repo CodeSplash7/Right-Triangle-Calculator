@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    ></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div id="heroC1">
+      <h1 id="title">Right triangle calculator</h1>
+      <div id="getters">
+        <div class="getter" id="getSideA">
+          <p>a:</p>
+          <input type="text" id="sideA" placeholder="Enter side a" />
+        </div>
+        <div class="getter" id="getSideB">
+          <p>b:</p>
+          <input type="text" id="sideB" placeholder="Enter side b" />
+        </div>
+        <div class="getter" id="getSideC">
+          <p>c:</p>
+          <input type="text" id="sideC" placeholder="Enter side c" />
+        </div>
+        <div class="getter" id="getSideD">
+          <p>d:</p>
+          <input type="text" id="sideD" placeholder="Enter side d" />
+        </div>
+      </div>
+      <p id="note">Note: if you don't know a side leave it blank</p>
+      <div id="solveButton">
+        <p>SOLVE</p>
+        <svg
+          width="380"
+          height="379"
+          viewBox="0 0 380 379"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M260 80H300.001H340.002"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M260 283H300.001H340.002"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M260 336H300.001H340.002"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M80.0008 120.002V80.0008V40"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M40 80.2468H80.0008H120.002"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M96.8545 336.855L68.5697 308.57L40.2848 280.285"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M40.4588 337.028L68.7436 308.744L97.0284 280.459"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M20 189L359.001 189"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+          <path
+            d="M189.5 359.001L189.5 19.9993"
+            stroke="black"
+            stroke-width="40"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <div id="heroC2">
+      <img src="./img/right triangle.png" />
+      <div id="results">
+        <p id="resultA">a = <span class="result">?</span></p>
+        <p id="resultB">b = <span class="result">?</span></p>
+        <p id="resultC">c = <span class="result">?</span></p>
+        <p id="resultD">d = <span class="result">?</span></p>
+        <br />
+        <p id="error" style="color: red; display: none">
+          Error: A right triangle with the sizes you have given doesn't exist!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
